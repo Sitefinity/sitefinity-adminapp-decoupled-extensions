@@ -23,6 +23,7 @@
               "media": "media",
               "server": "server"
             },
+            "baseHref": "/sfextensions/custom-fields/",
             "deployUrl": "/sfextensions/custom-fields/",
             "index": "src/index.html",
             "browser": "src/main.ts",

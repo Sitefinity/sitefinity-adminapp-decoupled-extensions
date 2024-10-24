@@ -38,7 +38,6 @@ export class CustomSeoTitleComponent implements OnInit, OnDestroy {
 
     // Get a proxy to the 'SitefinityService' to call methods on Sitefinity
     this.sitefinityService = this.rpcChannel.getService<ISitefinityService>("SitefinityService", ['setErrors', 'writeValue']);
-    // this.sitefinityService = this.rpcChannel.getService<ISitefinityService>("asd", ['setErrors',"writeValue", "asjd"])
 
     this.rpcChannel.on(EVENT_NAMES.INIT, (payload: { value: any; settings: any }) => {
       this.innerValue = payload.value;

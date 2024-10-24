@@ -9,6 +9,7 @@ function myCustomToolExec(e: Event, sfContext: SfToolContext) {
 
     const that = this;
     const sdk: Sitefinity = sfContext.restSdk;
+    const dataItem = sfContext.dataItem;
 
     getFirstAlbumId(sdk).then((data: any) => {
         const firstAlbumId = data.value[0].Id;
@@ -21,6 +22,7 @@ function myCustomToolExec(e: Event, sfContext: SfToolContext) {
 registerCustomTool("myCustomToolExec", myCustomToolExec);
 
 registerToolIcons(() => {
+    // get the kendo object from the window object
     const kendo = (window as any).kendo || {};
     // this line sets the icon of the element if it's in the main toolbar
     kendo?.ui?.icon($('.k-button[title="My custom tool does some work"] .k-icon'), { icon: 'camera' });
