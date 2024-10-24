@@ -1,0 +1,29 @@
+[
+  {
+    "typeName": "newsitems",
+    "fieldName": "ss"
+  },
+  {
+    "typeName": "newsitems",
+    "fieldName": "none"
+  },
+  {
+    "typeName": "newsitems",
+    "fieldName": "relatedimage"
+  },
+  {
+    "fieldName": "MetaTitle"
+  },
+  {
+    "fieldName": "MetaDescription"
+  },
+  {
+    "fieldName": "OpenGraphTitle"
+  },
+  {
+    "fieldName": "OpenGraphDescription"
+  },
+  {
+    "fieldName": "Title"
+  }
+]

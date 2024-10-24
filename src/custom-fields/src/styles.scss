@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@use "sass:meta";
+@include meta.load-css("@progress/sitefinity-component-framework/styles/dist/sitefinity/css/main.min.css");
+
+body {
+  overflow: hidden !important;
+}

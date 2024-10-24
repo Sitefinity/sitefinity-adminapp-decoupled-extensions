@@ -1,0 +1,42 @@
+{
+  "name": "sitefinity-adminapp-extensions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build.mjs build & npm run cf-build",
+    "watch": "concurrently \"node ./proxy/server.js\" \"npm run cf-watch\" \"node build.mjs watch\"",
+    "rte-build": "node build.mjs build",
+    "rte-start": "node build.mjs start",
+    "cf-build": "npm run build --prefix src/custom-fields",
+    "cf-watch": "npm run watch --prefix src/custom-fields",
+    "cf-serve": "npm run start --prefix src/custom-fields",
+    "cf-test": "npm run test --prefix src/custom-fields"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/jquery": "3.5.30",
+    "@types/node": "22.2.0",
+    "concurrently": "9.0.1",
+    "cors": "2.8.5",
+    "esbuild": "0.23.1",
+    "express": "4.21.0",
+    "http-proxy-middleware": "3.0.2",
+    "mime-types": "2.1.35",
+    "selfsigned": "2.4.1",
+    "ts-node": "10.9.2",
+    "typedoc": "0.26.5",
+    "typescript": "5.5.4",
+    "zlib": "1.0.5"
+  },
+  "workspaces": [
+    "src/custom-fields"
+  ],
+  "dependencies": {
+    "@progress/sitefinity-adminapp-extensions-sdk": "0.1.0",
+    "@progress/sitefinity-webservices-sdk": "1.1.11",
+    "html2canvas": "1.4.1"
+  }
+}

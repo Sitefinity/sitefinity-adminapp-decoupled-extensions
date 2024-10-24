@@ -1,0 +1,29 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Hint git parser
+*.html          text diff=html
+*.htm           text diff=html
+*.cs            text diff=csharp
+*.xaml          text
+*.csproj        text
+*.sln           text
+*.ps1           text
+*.cmd           text
+*.msbuild       text
+*.md            text
+*.targets       text
+*.xml           text
+*.js            text
+*.txt           text
+*.css           text
+*.proj          text
+*.vstemplate    text
+*.bat           text
+*.json          text
+*.vsct          text
+*.manifest      text
+*.aspx          text
+*.asax          text
+*.tasks         text
+*.resx          text
