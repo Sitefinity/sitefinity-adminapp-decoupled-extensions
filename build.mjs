@@ -144,7 +144,7 @@ async function startServer() {
         allowedHeaders: ["*"],
     }));
 
-    app.use(express.static(outDir));
+    app.use("/sfextensions/rte", express.static(outDir));
 
     app.options('*', cors());
 
