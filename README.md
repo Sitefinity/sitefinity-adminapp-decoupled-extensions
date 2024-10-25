@@ -396,4 +396,4 @@ export class SeoService {
 }
 ```
 
-For more information please refer to the API documentation of `@progress/sitefinity-adminapp-extensions-sdk` [here](./api-docs/index.html).
+For more information, please refer to the API documentation of `@progress/sitefinity-adminapp-extensions-sdk` [here](./api-docs/index.html).
