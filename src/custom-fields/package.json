@@ -20,7 +20,7 @@
     "@angular/router": "18.2.0",
     "@ngrx/effects": "18.0.2",
     "@ngrx/store": "18.0.2",
-    "@progress/sitefinity-component-framework": "file:../../localnpm/progress-sitefinity-component-framework-0.0.0-RELEASE.tgz",
+    "@progress/sitefinity-component-framework": "11.0.0",
     "rxjs": "7.8.1",
     "tslib": "2.3.0",
     "zone.js": "0.14.10"
